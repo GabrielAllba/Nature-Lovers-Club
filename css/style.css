@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "reg-popins";
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'header font';
+    src: url(/fonts/KaushanScript-Regular.ttf);
+}
+@font-face {
+    font-family: 'light popins';
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'bold popins';
+    src: url(/fonts/Poppins-Bold.ttf);
+}
+/*Universal*/
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "reg-popins", sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+}
+.nav-container{
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    background-color: rgba(39, 39, 39, 0.425);
+}
+
+.toggle{
+    display: none;
+}
+ul{
+    display: flex;
+}
+ul li{
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: 0.5s;
+    letter-spacing: .2rem;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    border-radius: 40px;
+    background-color: rgb(161, 0, 113);
+    transition: 0.5s;
+}
+ul li a:hover{
+    transition: 0.5s;
+    color: rgb(167, 0, 117);
+    transform: scale(1.1);
+}
+ul li a:hover::after{
+    transition: 0.5s;
+    left: 0;
+    right: 0;
+}
+
+/*main head*/
+.main-head{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 39rem;
+    width: 100%;
+}
+.main-head h1{
+    font-family: 'header font';
+    font-size: 11rem;
+    color: white;
+}
+.main-head h3{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: rgba(94, 94, 94, 0.521);
+}
+
+/* about */
+.about{
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    background-image: url(/images/title-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    
+}
+.title h1{
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: .5rem;
+    font-family: 'bold popins';
+    text-transform: uppercase;
+    text-align: right ;
+}
+.title h3{
+    color: rgb(167, 0, 117);
+    text-align: right ;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    max-width: 70%;
+    font-size: 1rem;
+}
+.title .text{
+    width: 70%;
+}
+.title .text p{
+    max-width: 100%;
+    text-align: justify;
+    color: rgb(187, 187, 187);
+    font-size: .75rem;
+}
+.about-content{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+.content{
+    display: inline-flex;
+    height: 80%;
+    flex-direction: column;
+}
+.one{
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+}
+.princip-one{
+    background-image: url(/images/princip-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 80%;
+}
+.princip-two{
+    background-image: url(/images/princip-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+.princip{
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: scale(1);transition: 0.5s ease;
+}
+.two{
+    width: 40%;
+    justify-content: center;
+}
+.princip-three{
+    background-image: url(/images/princip-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+.princip-desc h5{
+    margin-top: 30%;
+    color: white;
+    font-size: 2.5rem;
+}
+.princip-desc{
+    opacity: 0;
+    position: absolute;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    transition: 0.5s ease;
+}
+.princip:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+.princip:hover .princip-desc{
+    opacity: 1;
+    bottom: 0;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
