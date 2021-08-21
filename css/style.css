@@ -243,7 +243,7 @@ ul li a:hover::after{
     align-items: center;
     width: 100%;
     height: 39rem;
-    background-image: url(/images/event-bg.jpg);
+    background-image: url(/images/canyon-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ ul li a:hover::after{
 
     /* MEMBERSHIP */
 .membership{
-    height: 39rem;
+    min-height: 39rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -368,6 +368,7 @@ ul li a:hover::after{
     height: 90%;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card{
     background-image: url(/images/card-bg.jpg);
@@ -376,12 +377,12 @@ ul li a:hover::after{
     background-size: cover;
     margin: 1.5rem;
     width: 17rem;
-    height: 70%;
+    height: 25rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     color: rgb(90, 90, 90);
-    transform: scale(1.08);
+    transform: scale(1);
     transition: 0.5s;
     cursor: pointer;
 }
