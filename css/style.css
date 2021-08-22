@@ -352,7 +352,7 @@ ul li a:hover::after{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    background-color: black;
+    background: linear-gradient(to bottom, black, rgb(63, 63, 63));
 }
 .membership-title h1{
     color: rgb(255, 255, 255);
@@ -369,7 +369,7 @@ ul li a:hover::after{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background:linear-gradient(to bottom, black, rgb(24, 24, 24));
+    background:linear-gradient(to bottom, rgb(63, 63, 63), rgb(24, 24, 24));
 }
 .card{
     background-image: url(/images/card-bg.jpg);
@@ -490,7 +490,7 @@ ul li a:hover::after{
     min-height: 30rem;
     align-items: center;
     justify-content: center;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(24, 24, 24);
 }
 .form-tittle{
     font-size: 1.8rem;
