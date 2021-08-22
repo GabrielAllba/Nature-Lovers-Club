@@ -467,11 +467,13 @@ ul li a:hover::after{
     transition: 0.5s;
 }
 .card::after{
-    content: 'SEE DETAILS';
+    content: 'BUY';
     font-size: 1rem;
     position: absolute;
-    left: 27%;
+    left: 20%;
+    text-align: center;
     bottom: -10%;
+    width: 50%;
     color: rgb(199, 199, 199);
     padding: .7rem;
     background-color: transparent;
